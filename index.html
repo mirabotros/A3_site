@@ -164,8 +164,108 @@
         text-align: center;
       }
       
+      .collagetoronto {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 18%;
+        display: block;
+      }
+
+      .torontocover {
+        position: relative;
+        width: 60%;
+        display: block;
+      }
+
+      /* for text  */
+      .floating-texttoronto {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        top: 76%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      .biotoronto {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        left: 16%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+      
+    /* for pictures and text lebanon */
+    
        #lebanon.page {
-         /* comment */
+        text-align: center;
+      }
+            .collagelebanon {
+        position: relative;
+        width: 78%;
+        margin-top: 50px;
+        margin-left: 23%;
+        display: block;
+      }
+
+      .lebanoncover {
+        position: relative;
+        width: 60%;
+        display: block;
+      }
+
+      .lebanon2 {
+        position: relative;
+        width: 70%;
+        margin-top: -18%;
+        margin-left: -43%;
+        display: block;
+      }
+
+      .lebanon3 {
+        position: relative;
+        width: 80%;
+        margin-left: -10%;
+        display: block;
+      }
+
+      /* for text  */
+      .floating-textlebanon {
+        position: absolute;
+        writing-mode: vertical-lr;
+        font-size: 1.2vw;
+        line-height: 4px;
+        top: 19%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      .biolebanon {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        left: 56%;
+        transform: translate(-40%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+/* for pictures and text egypt */
+    
+       #egypt.page {
+        text-align: center;
+      }
+      
+      /* for pictures and text greece */
+    
+       #greece.page {
+        text-align: center;
       }
 
       .page.active {
@@ -264,10 +364,82 @@
     
     
 <!-- TORONTO PAGE -->  
-    <section id="contact" class="page">
-      <h2>Contact Page</h2>
-      <!-- Content for the contact page -->
+    <section id="toronto" class="page">
+        <main>
+      <!-- title page for toronto -->
+      <p>TRAVEL SCRAPBOOK</p>
+      <p>TORONTO</p>
+      <div class="collagetoronto">
+        <img class="torontocover" src="torontocover.png" alt="toronto cover page">
+        <div class="floating-texttoronto">
+          <p>Queen Street West</p>
+          <p>&amp Yorkville</p>
+        </div>
+      </div>
+      <!-- first collage of picture  -->
+      <div class="div-spacer"></div>
+      <div class="collagetoronto">
+        <img class="torontocover" src="toronto2.png" alt="toronto collage 2"> </div>
+      <!-- paragraph -->
+      <div class="collagetoronto">
+        <div class="div-spacer"></div>
+        <div class="biotoronto">
+          <p>GOING TO TORONTO WITH MY FRIENDS HAS ALWAYS</p>
+          <p>BEEN A GO-TO ESCAPE FROM THE BORING QUITE LIFE WE</p>
+          <p>HAVE BACK AT HOME. A QUICK 45 MINUTE TRAIN LATER,</p>
+          <p>WE BECOME OUR MOST CONFIDENT SELVES. DRESSING UP, </p>
+          <p>GOING TO THE CITY AND OUT TO EAT AT RESTAURANTS LIKE </p>
+          <p>SOFIA'S, CANOE, JACOB'S, THE CHASE OR SOTTO SOTTO </p>
+          <p>THIS YEAR HAVE BEEN SOME OF MY BEST MEMORIES. </p>
+          <p>PLANS LIKE THESE BRINGS ALL MY FRIENDS TOGETHER</p>
+          <p>WHERE WE'RE ALL GLAMMED UP AND HAVING A GOOD TIME</p>
+          <p>IS AN OPPORTUNITY I DON'T WANT TO EVER MISS.</p>
+        </div>
+        <!-- second collage of pictures -->
+        <div class="div-spacer"></div>
+        <img class="torontocover" src="toronto3.png" alt="toronto collage 3">
+      </div>
+    </main>
     </section>
+
+  
+    <!-- LEBANON PAGE -->  
+    <section id="lebanon" class="page">
+          <main>
+      <!-- title page for lebanon -->
+      <p>TRAVEL SCRAPBOOK</p>
+      <p>LEBANON</p>
+      <div class="collagelebanon">
+        <img class="lebanoncover" src="lebanoncover.png" alt="lebanon cover page">
+        <div class="floating-textlebanon">
+          <p>Hadath, Lebanon</p>
+          <p>Hasroun, Lebanon</p>
+        </div>
+      </div>
+      <!-- paragraph -->
+      <div class="collagelebanon">
+        <div class="div-spacer"></div>
+        <div class="div-spacer"></div>
+        <div class="biolebanon">
+          <p>LEBANON WAS MY MOST SPONTANEOUS ADVENTURE.</p>
+          <p>ON A PLANNED TRIP TO EGYPT I MET UP WITH MY</p>
+          <p> MOM'S HIGHSCHOOL FRIENDS WHO THEN INVITED</p>
+          <p>ME TO GO TO LEBANON WITH THEM IN 2 DAYS. I HAD</p>
+          <p>NEVER SAID YES SO EASILY, AND I STILL CAN'T BELIEVE</p>
+          <p>HOW LUCKY I AM TO HAVE EXPERIENCED THE BEAUTY</p>
+          <p>OF LEBANON. EVERYWHERE WE WENT WAS FILLED </p>
+          <p>WITH CREATIVITY LOVE AND CARE.</p>
+        </div>
+        <!-- first collage of picture  -->
+        <div class="collagelebanon">
+          <img class="lebanon2" src="lebanon2.png" alt="lebanon collage 2"> </div>
+        <!-- second collage of pictures -->
+        <div class="div-spacer"></div>
+        <img class="lebanon3" src="lebanon3.png" alt="lebanon collage 3">
+      </div>
+    </main>
+    </section>
+  
 
     <script>
       function showPage(pageId) {
