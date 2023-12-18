@@ -3,7 +3,6 @@
   <head>
     <meta charset="utc-8">
     <style>
-      /* CSS styling */
       body {
         font-family: Futura;
         margin: 0;
@@ -44,9 +43,12 @@
         line-height: 7px;
       }
 
-      /* styling used for all pages*/
       .page {
         display: none;
+      }
+
+      .page:target {
+        display: block;
       }
 
       .logo {
@@ -74,12 +76,10 @@
         height: 7vw;
       }
 
-      
-      
+
+
       /* for pictures and text home */
-      #home.page {
-        /* comment */
-      }
+
 
       .globe-image {
         position: absolute;
@@ -106,9 +106,6 @@
 
       /* for pictures and text croatia */
 
-      #croatia.page {
-        text-align: center;
-      }
 
       .collagecroatia {
         position: relative;
@@ -124,7 +121,7 @@
         display: block;
       }
 
-      /* for text  */
+
       .floating-textcroatia {
         position: absolute;
         writing-mode: vertical-lr;
@@ -161,9 +158,6 @@
 
       /* for pictures and text toronto */
 
-      #toronto.page {
-        text-align: center;
-      }
 
       .collagetoronto {
         position: relative;
@@ -179,7 +173,6 @@
         display: block;
       }
 
-      /* for text  */
       .floating-texttoronto {
         position: absolute;
         font-size: 1.2vw;
@@ -203,9 +196,6 @@
 
       /* for pictures and text lebanon */
 
-      #lebanon.page {
-        text-align: center;
-      }
 
       .collagelebanon {
         position: relative;
@@ -236,7 +226,6 @@
         display: block;
       }
 
-      /* for text  */
       .floating-textlebanon {
         position: absolute;
         writing-mode: vertical-lr;
@@ -261,10 +250,6 @@
 
       /* for pictures and text egypt */
 
-      #egypt.page {
-        text-align: center;
-      }
-
       .collageegypt {
         position: relative;
         width: 100%;
@@ -279,7 +264,6 @@
         display: block;
       }
 
-      /* for text */
       .floating-textegypt {
         position: absolute;
         font-size: 1.2vw;
@@ -304,9 +288,6 @@
 
       /* for pictures and text greece */
 
-      #greece.page {
-        text-align: center;
-      }
 
       .collagegreece {
         position: relative;
@@ -322,7 +303,6 @@
         display: block;
       }
 
-      /* for text */
       .floating-textgreece {
         position: absolute;
         font-size: 1.2vw;
@@ -344,54 +324,33 @@
         z-index: 2;
         text-align: center;
       }
-
-      .page.active {
-        display: block;
-      }
     </style>
     
-    
-    
-    
-    
-    
-  </head>
-  
-  
-  <script>
-      function showPage(pageId) {
-        // Hide all pages
-        document.querySelectorAll('.page').forEach(page => {
-          page.classList.remove('active');
-        });
 
-        // Show the selected page
-        document.getElementById(pageId).classList.add('active');
-      }
-    </script>
-  
-  
+
+<!-- HTML BEGINS --> 
+
+  </head>
   <body>
+
+<!-- NAV BAR -->
     <nav>
       <img class="logo" src="logo.png" alt="logo">
       <a href="https://www.instagram.com/mireillebotros/" class="instagram"><img src="instagram.png" alt="instagram logo"></a>
       <a href="https://www.tiktok.com/@mirabotros" class="tiktok"><img src="tiktok.png" alt="tiktok logo"></a>
-      <!-- navigation redirections -->
-
-      <a href="#home" class="hoverable" onclick="showPage('home')">HOME</a>
-      <a href="#croatia" class="hoverable" onclick="showPage('croatia')">CROATIA</a>
-      <a href="#toronto" class="hoverable" onclick="showPage('toronto')">TORONTO</a>
-      <a href="#lebanon" class="hoverable" onclick="showPage('lebanon')">LEBANON</a>
-      <a href="#egypt" class="hoverable" onclick="showPage('egypt')">EGYPT</a>
-      <a href="#greece" class="hoverable" onclick="showPage('greece')">GREECE</a>
+          <!-- navigation redirections -->
+      <ul>
+        <a href="#home">HOME</a>
+        <a href="#croatia">CROATIA</a>
+        <a href="#toronto">TORONTO</a>
+        <a href="#lebanon">LEBANON</a>
+        <a href="#egypt">EGYPT</a>
+        <a href="#greece">GREECE</a>
+      </ul>
     </nav>
 
-
-
-
-
     <!-- HOME PAGE -->
-    <section id="home" class="page active">
+    <div id="home" class="page">
       <main>
         <!-- picture of me, overlap text & globe -->
         <div class="collagehome">
@@ -404,14 +363,11 @@
         </div>
         <img class="globe-image" src="globe.png" alt="picture of globe">
       </main>
-    </section>
+    </div>
 
-
-
-
-
-    <!-- CROATIA PAGE -->
-    <section id="croatia" class="page">
+    
+<!-- CROATIA PAGE -->   
+    <div id="croatia" class="page">
       <main>
         <!-- title page for croatia -->
         <p>TRAVEL SCRAPBOOK</p>
@@ -460,15 +416,13 @@
           <img class="croatiacover" src="croatia3.png" alt="croatia collage 3">
         </div>
       </main>
-    </section>
+    </div>
 
-
-
-
-
-
-    <!-- TORONTO PAGE -->
-    <section id="toronto" class="page">
+    
+    
+    
+<!-- TORONTO PAGE -->
+    <div id="toronto" class="page">
       <main>
         <!-- title page for toronto -->
         <p>TRAVEL SCRAPBOOK</p>
@@ -504,15 +458,14 @@
           <img class="torontocover" src="toronto3.png" alt="toronto collage 3">
         </div>
       </main>
-    </section>
+    </div>
 
-
-
-
-
-
-    <!-- LEBANON PAGE -->
-    <section id="lebanon" class="page">
+    
+    
+    
+    
+<!-- LEBANON PAGE -->  
+    <div id="lebanon" class="page">
       <main>
         <!-- title page for lebanon -->
         <p>TRAVEL SCRAPBOOK</p>
@@ -546,14 +499,13 @@
           <img class="lebanon3" src="lebanon3.png" alt="lebanon collage 3">
         </div>
       </main>
-    </section>
+    </div>
 
-
-
-
-
-    <!-- EGYPT PAGE -->
-    <section id="egypt" class="page">
+    
+    
+    
+<!-- EGYPT PAGE --> 
+    <div id="egypt" class="page">
       <main>
         <!-- title page for egypt -->
         <p>TRAVEL SCRAPBOOK</p>
@@ -608,13 +560,13 @@
           <img class="egyptcover" src="egypt4.png" alt="egypt collage 4">
         </div>
       </main>
-    </section>
+    </div>
 
+    
 
-
-
-    <!-- GREECE PAGE -->
-    <section id="greece" class="page">
+    
+<!-- GREECE PAGE -->
+    <div id="greece" class="page">
       <main>
         <!-- title page for greece -->
         <p>TRAVEL SCRAPBOOK</p>
@@ -652,9 +604,8 @@
           <img class="greececover" src="greece4.png" alt="greece collage 4">
         </div>
       </main>
-    </section>
-    
- 
+    </div>
+
 
   </body>
 </html>
