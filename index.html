@@ -47,7 +47,6 @@
       /* Styles specific to each page */
       .page {
         display: none;
-        padding: 20px;
       }
       
  				.logo {
@@ -70,8 +69,17 @@
           top: -9px;
           right: 24px;
         }
-
-        /* for pictures and text */
+      
+        .div-spacer {
+        height: 7vw;
+      }
+      
+    
+      #home.page {
+        /* comment */
+        }
+      
+        /* for pictures and text home */
         .globe-image {
           position: absolute;
           width: 65%;
@@ -79,13 +87,13 @@
           right: 0px;
         }
 
-        .collage {
+        .collagehome {
           position: relative;
           width: 100%;
           display: block;
         }
 
-        .floating-text {
+        .floating-texthome {
           position: absolute;
           top: 40%;
           left: 38%;
@@ -93,18 +101,67 @@
           z-index: 2;
           text-align: center;
       		}
-      
-      #home.page {
-        /* comment */
-        }
+  
      
-
+  /* for pictures and text croatia */
+      
       #croatia.page {
-        /* comment */
+        text-align: center;
+      }
+      
+      .collagecroatia {
+        position: relative;
+        width: 60%;
+        margin-top: 3%;
+        margin-left: 23%;
+        display: block;
       }
 
+      .croatiacover {
+        position: relative;
+        width: 90%;
+        display: block;
+      }
+
+      /* for text  */
+      .floating-textcroatia {
+        position: absolute;
+        writing-mode: vertical-lr;
+        font-size: 1.2vw;
+        line-height: 4px;
+        bottom: 30%;
+        left: 54%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      .biocroatia1 {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        top: 20%;
+        left: 55%;
+        transform: translate(-10%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      .biocroatia2 {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        top: 2%;
+        left: 23%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+          
+  /* for pictures and text toronto */
+
       #toronto.page {
-        /* comment */
+        text-align: center;
       }
       
        #lebanon.page {
@@ -139,9 +196,9 @@
     <section id="home" class="page active">
       <main>
         <!-- picture of me, overlap text & globe -->
-        <div class="collage">
+        <div class="collagehome">
           <img src="pictureofme.png" alt="picture of me">
-          <div class="floating-text">
+          <div class="floating-texthome">
             <p>TRAVEL SCRAPBOOK</p>
             <p>MIREILLE BOTROS</p>
             <a href="mailto:m3botros@uwaterloo.ca" style="color: white;">Email Me!</a>
@@ -159,8 +216,8 @@
       <!-- title page for croatia -->
       <p>TRAVEL SCRAPBOOK</p>
       <p>CROATIA</p>
-      <div class="collage">
-        <div class="floating-text">
+      <div class="collagecroatia">
+        <div class="floating-textcroatia">
           <p>Southern Croatia.</p>
           <p>Dubrovnik, </p>
         </div>
@@ -168,12 +225,12 @@
       </div>
       <!-- first collage of picture  -->
       <div class="div-spacer"></div>
-      <div class="collage">
+      <div class="collagecroatia">
         <img class="croatiacover" src="croatia2.png" alt="croatia collage 2"> </div>
       <!-- first paragraph -->
-      <div class="collage">
+      <div class="collagecroatia">
         <div class="div-spacer"></div>
-        <div class="bio1">
+        <div class="biocroatia1">
           <p>CROATIA WAS A STUNNING SURPRISE MY</p>
           <p>PARENTS PLANNED. EVERY TIME I MISS</p>
           <p>SUMMER I REMEMBER CROATIA'S </p>
@@ -186,9 +243,9 @@
       </div>
       <!-- second paragraph-->
       <div class="div-spacer"></div>
-      <div class="collage">
+      <div class="collagecroatia">
         <div class="div-spacer"></div>
-        <div class="bio2">
+        <div class="biocroatia2">
           <p>A COUNTRY THAT WITHSTOOD WARS AND</p>
           <p>DESTRUCTION, IT'S PEOPOLE HAVE DONE</p>
           <p>AN AMAZING JOB AT RESTORING AND </p>
